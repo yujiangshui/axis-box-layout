@@ -1,6 +1,6 @@
 {
   "name": "axis-box-layout",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "New layout system base on axis.",
   "main": "lib/index.js",
   "scripts": {
