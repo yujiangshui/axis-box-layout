@@ -1,7 +1,7 @@
 {
   "name": "axis-box-layout",
   "version": "0.0.1",
-  "description": "Layout the box with axis.",
+  "description": "New layout system base on axis.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
