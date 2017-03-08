@@ -2,7 +2,7 @@
   "name": "axis-box-layout",
   "version": "0.0.1",
   "description": "New layout system base on axis.",
-  "main": "index.js",
+  "main": "lib/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "babel src -d lib"
@@ -22,12 +22,12 @@
   },
   "homepage": "https://github.com/yujiangshui/axis-box-layout#readme",
   "devDependencies": {
-    "babel-cli": "^6.23.0"
-  },
-  "dependencies": {
     "babel-preset-es2015": "^6.22.0",
     "babel-preset-react": "^6.23.0",
     "babel-preset-stage-0": "^6.22.0",
+    "babel-cli": "^6.23.0"
+  },
+  "dependencies": {
     "react": "^15.4.2",
     "react-dom": "^15.4.2"
   }
