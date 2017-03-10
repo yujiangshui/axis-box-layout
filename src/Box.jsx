@@ -61,7 +61,7 @@ class Box extends Component {
       element,
       {
         className: `axis-box ${className}`,
-        style: {...boxDefaultStyles,...styles, ...propsStyle},
+        style: {...boxDefaultStyles, ...styles, ...propsStyle},
         ...others
       },
       this.props.children

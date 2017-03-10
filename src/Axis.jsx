@@ -14,6 +14,7 @@ class Axis extends Component {
     yStretch: React.PropTypes.bool,
     style: React.PropTypes.object,
     className: React.PropTypes.string,
+    // todo
     boxMarginOffset: React.PropTypes.oneOfType([
       React.PropTypes.string,
       React.PropTypes.number
@@ -55,8 +56,10 @@ class Axis extends Component {
     if (alignAxis === 'y') {
       newChildren = React.Children.map(children, (child) => {
         if (child.type && child.type.name === 'Box') {
+          const childStyle = child.props.style || {};
           return React.cloneElement(child, {
             style: {
+              ...childStyle,
               width: '100%',
             }
           });
@@ -119,7 +122,10 @@ class Axis extends Component {
 
 
 const axisDefaultStyles = {
+  width: '100%',
+  height: '100%',
   display: 'flex',
+  alignContent: 'flex-start',
   flexDirection: 'row',
   flexWrap: 'wrap',
 };
