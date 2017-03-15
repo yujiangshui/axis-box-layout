@@ -55,7 +55,7 @@ class Axis extends Component {
     let styles = {};
     if (alignAxis === 'y') {
       newChildren = React.Children.map(children, (child) => {
-        if (child.type && child.type.name === 'Box') {
+        if (child && child.type && child.type.name === 'Box') {
           const childStyle = child.props.style || {};
           return React.cloneElement(child, {
             style: {
